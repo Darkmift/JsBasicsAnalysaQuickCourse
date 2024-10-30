@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:poppins, arial, sans-serif;
+}
+
+body{
+    height:100vh;
+}
+
+.warpper{
+    display:flex;
+    flex-direction:column;
+}
+
+/* header */
+header{
+    background:#888;
+}
+
+header > div{
+    height:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* header - search */
+#search-container{
+    padding:5px 0;
+    border-top:1px solid #333;
+}
+
+#search-container > .search-icon,
+#search-container > input{
+    height:100%;
+}
+
+#search-container > .search-icon{
+    padding:2px;
+    background:#fff;
+    border:none;
+    cursor:pointer;
+}
+
+#search-container > .search-icon:active{
+    background:#ccc;
+}
+
+#search-container > input{
+    width:400px;
+    padding:2px;
+    font-size:16px;
+    border:none;
+    outline:none;
+}
+
+/* book-list */
+.list{
+    list-style:none;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.list > li{
+    display:inline-block;
+}
+
+.list > li > div{
+    margin:5px;
+    padding:10px;
+    border:2px solid #ccc;
+    cursor:pointer;
+}
+
+.list > li > div > img{
+    width:200px;
+    height:auto;
+}
+
+.list > li > div > h2{
+    text-align:center;
+    color:#333;
+    font-size:18px;
+    text-transform:capitalize;
+}
+
+#book-name{
+    text-transform: capitalize;
+}

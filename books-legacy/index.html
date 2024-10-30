@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books</title>
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h3 id="book-name"></h3>
+      <div id="search-container">
+        <input id="search-bar" type="search">
+        <img 
+          id="search" 
+          class="search-icon" 
+          src="./src/images/search.png">
+      </div>
+    </header>
+    <div>
+      <ul data-book-list class="list"></ul>
+    </div>
+  </div>
+  <script type="module" src="./src/js/script.js"></script>
+</body>
+
+</html>
