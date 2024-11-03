@@ -10,16 +10,25 @@ const bookListEl = document.querySelector('[data-book-list]');
 function fetchBooks() {
   console.log('2. fetching books');
   // ASYNC CODE
-  fetch('http://localhost:8000/api/books')
+  fetch('http://localhost:8000/api/books', {
+    method: 'GET',
+    credentials: 'include', // Include this if you're using sessions/cookies
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+    },
+  })
     .then((response) => response.json())
     .then((data) => {
       //books array from server
       books.push(...data);
       displayBooks(books);
       console.log('3. books fetched', books);
-    }).catch((error) => {
+    })
+    .catch((error) => {
       console.error('Error:', error);
-    }).finally(() => {
+    })
+    .finally(() => {
       console.log('fetchBooks() done');
     });
 }

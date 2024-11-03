@@ -246,7 +246,7 @@
         "kind": 5,
         "importPath": "book_api.settings",
         "description": "book_api.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-)xr=su4oa%9@2v97^t($d@#$+$ii^k$b&(i83_jqj*t_3e9y#x'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# CORS Settings\nCORS_ALLOW_ALL_ORIGINS = True  # Only use this for development",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-)xr=su4oa%9@2v97^t($d@#$+$ii^k$b&(i83_jqj*t_3e9y#x'\n# CORS Settings\nCORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_ALL_ORIGINS = True\nCORS_ALLOW_CREDENTIALS = True\nALLOWED_HOSTS = ['*']",
         "detail": "book_api.settings",
         "documentation": {}
     },
@@ -255,25 +255,16 @@
         "kind": 5,
         "importPath": "book_api.settings",
         "description": "book_api.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-)xr=su4oa%9@2v97^t($d@#$+$ii^k$b&(i83_jqj*t_3e9y#x'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# CORS Settings\nCORS_ALLOW_ALL_ORIGINS = True  # Only use this for development\n# CORS_ALLOWED_ORIGINS = [\n#     \"http://localhost:8080\",\n#     \"http://127.0.0.1:8080\",\n# ]",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-)xr=su4oa%9@2v97^t($d@#$+$ii^k$b&(i83_jqj*t_3e9y#x'\n# CORS Settings\nCORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_ALL_ORIGINS = True\nCORS_ALLOW_CREDENTIALS = True\nALLOWED_HOSTS = ['*']\n# Explicit CORS origins (use this in production instead of ALLOW_ALL)\nCORS_ALLOWED_ORIGINS = [\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:8080\",",
         "detail": "book_api.settings",
         "documentation": {}
     },
     {
-        "label": "DEBUG",
+        "label": "CORS_ORIGIN_ALLOW_ALL",
         "kind": 5,
         "importPath": "book_api.settings",
         "description": "book_api.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# CORS Settings\nCORS_ALLOW_ALL_ORIGINS = True  # Only use this for development\n# CORS_ALLOWED_ORIGINS = [\n#     \"http://localhost:8080\",\n#     \"http://127.0.0.1:8080\",\n# ]\n# Additional CORS Settings\nCORS_ALLOW_METHODS = [",
-        "detail": "book_api.settings",
-        "documentation": {}
-    },
-    {
-        "label": "ALLOWED_HOSTS",
-        "kind": 5,
-        "importPath": "book_api.settings",
-        "description": "book_api.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# CORS Settings\nCORS_ALLOW_ALL_ORIGINS = True  # Only use this for development\n# CORS_ALLOWED_ORIGINS = [\n#     \"http://localhost:8080\",\n#     \"http://127.0.0.1:8080\",\n# ]\n# Additional CORS Settings\nCORS_ALLOW_METHODS = [\n    \"DELETE\",",
+        "peekOfCode": "CORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_ALL_ORIGINS = True\nCORS_ALLOW_CREDENTIALS = True\nALLOWED_HOSTS = ['*']\n# Explicit CORS origins (use this in production instead of ALLOW_ALL)\nCORS_ALLOWED_ORIGINS = [\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:8080\",\n]\n# Additional CORS settings",
         "detail": "book_api.settings",
         "documentation": {}
     },
@@ -282,25 +273,7 @@
         "kind": 5,
         "importPath": "book_api.settings",
         "description": "book_api.settings",
-        "peekOfCode": "CORS_ALLOW_ALL_ORIGINS = True  # Only use this for development\n# CORS_ALLOWED_ORIGINS = [\n#     \"http://localhost:8080\",\n#     \"http://127.0.0.1:8080\",\n# ]\n# Additional CORS Settings\nCORS_ALLOW_METHODS = [\n    \"DELETE\",\n    \"GET\",\n    \"OPTIONS\",",
-        "detail": "book_api.settings",
-        "documentation": {}
-    },
-    {
-        "label": "CORS_ALLOW_METHODS",
-        "kind": 5,
-        "importPath": "book_api.settings",
-        "description": "book_api.settings",
-        "peekOfCode": "CORS_ALLOW_METHODS = [\n    \"DELETE\",\n    \"GET\",\n    \"OPTIONS\",\n    \"PATCH\",\n    \"POST\",\n    \"PUT\",\n]\nCORS_ALLOW_HEADERS = [\n    \"accept\",",
-        "detail": "book_api.settings",
-        "documentation": {}
-    },
-    {
-        "label": "CORS_ALLOW_HEADERS",
-        "kind": 5,
-        "importPath": "book_api.settings",
-        "description": "book_api.settings",
-        "peekOfCode": "CORS_ALLOW_HEADERS = [\n    \"accept\",\n    \"accept-encoding\",\n    \"authorization\",\n    \"content-type\",\n    \"dnt\",\n    \"origin\",\n    \"user-agent\",\n    \"x-csrftoken\",\n    \"x-requested-with\",",
+        "peekOfCode": "CORS_ALLOW_ALL_ORIGINS = True\nCORS_ALLOW_CREDENTIALS = True\nALLOWED_HOSTS = ['*']\n# Explicit CORS origins (use this in production instead of ALLOW_ALL)\nCORS_ALLOWED_ORIGINS = [\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:8080\",\n]\n# Additional CORS settings\nCORS_ALLOW_METHODS = [",
         "detail": "book_api.settings",
         "documentation": {}
     },
@@ -309,16 +282,43 @@
         "kind": 5,
         "importPath": "book_api.settings",
         "description": "book_api.settings",
-        "peekOfCode": "CORS_ALLOW_CREDENTIALS = True\nCORS_PREFLIGHT_MAX_AGE = 86400  # 24 hours\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "CORS_ALLOW_CREDENTIALS = True\nALLOWED_HOSTS = ['*']\n# Explicit CORS origins (use this in production instead of ALLOW_ALL)\nCORS_ALLOWED_ORIGINS = [\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:8080\",\n]\n# Additional CORS settings\nCORS_ALLOW_METHODS = [\n    'DELETE',",
         "detail": "book_api.settings",
         "documentation": {}
     },
     {
-        "label": "CORS_PREFLIGHT_MAX_AGE",
+        "label": "ALLOWED_HOSTS",
         "kind": 5,
         "importPath": "book_api.settings",
         "description": "book_api.settings",
-        "peekOfCode": "CORS_PREFLIGHT_MAX_AGE = 86400  # 24 hours\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
+        "peekOfCode": "ALLOWED_HOSTS = ['*']\n# Explicit CORS origins (use this in production instead of ALLOW_ALL)\nCORS_ALLOWED_ORIGINS = [\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:8080\",\n]\n# Additional CORS settings\nCORS_ALLOW_METHODS = [\n    'DELETE',\n    'GET',",
+        "detail": "book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOWED_ORIGINS",
+        "kind": 5,
+        "importPath": "book_api.settings",
+        "description": "book_api.settings",
+        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:8080\",\n]\n# Additional CORS settings\nCORS_ALLOW_METHODS = [\n    'DELETE',\n    'GET',\n    'OPTIONS',\n    'PATCH',",
+        "detail": "book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOW_METHODS",
+        "kind": 5,
+        "importPath": "book_api.settings",
+        "description": "book_api.settings",
+        "peekOfCode": "CORS_ALLOW_METHODS = [\n    'DELETE',\n    'GET',\n    'OPTIONS',\n    'PATCH',\n    'POST',\n    'PUT',\n]\nCORS_ALLOW_HEADERS = [\n    'accept',",
+        "detail": "book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOW_HEADERS",
+        "kind": 5,
+        "importPath": "book_api.settings",
+        "description": "book_api.settings",
+        "peekOfCode": "CORS_ALLOW_HEADERS = [\n    'accept',\n    'accept-encoding',\n    'authorization',\n    'content-type',\n    'dnt',\n    'origin',\n    'user-agent',\n    'x-csrftoken',\n    'x-requested-with',",
         "detail": "book_api.settings",
         "documentation": {}
     },
