@@ -10,7 +10,7 @@ const bookListEl = document.querySelector('[data-book-list]');
 function fetchBooks() {
   console.log('2. fetching books');
   // ASYNC CODE
-  fetch('http://localhost:3000/books')
+  fetch('http://localhost:8000/api/books')
     .then((response) => response.json())
     .then((data) => {
       //books array from server
