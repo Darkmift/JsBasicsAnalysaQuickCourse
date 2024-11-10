@@ -1,0 +1,469 @@
+[
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "book_api.books.migrations.0001_initial",
+        "description": "book_api.books.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Book',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('book_title', models.CharField(max_length=255)),",
+        "detail": "book_api.books.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "book_api.books.migrations.0002_alter_book_image",
+        "description": "book_api.books.migrations.0002_alter_book_image",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('books', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='book',\n            name='image',\n            field=models.CharField(max_length=255),\n        ),",
+        "detail": "book_api.books.migrations.0002_alter_book_image",
+        "documentation": {}
+    },
+    {
+        "label": "BooksConfig",
+        "kind": 6,
+        "importPath": "book_api.books.apps",
+        "description": "book_api.books.apps",
+        "peekOfCode": "class BooksConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'books'",
+        "detail": "book_api.books.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "kind": 6,
+        "importPath": "book_api.books.models",
+        "description": "book_api.books.models",
+        "peekOfCode": "class Book(models.Model):\n    book_title = models.CharField(max_length=255)\n    image = models.CharField(max_length=255)\n    def __str__(self):\n        return self.book_title",
+        "detail": "book_api.books.models",
+        "documentation": {}
+    },
+    {
+        "label": "BookSerializer",
+        "kind": 6,
+        "importPath": "book_api.books.serializers",
+        "description": "book_api.books.serializers",
+        "peekOfCode": "class BookSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Book\n        fields = ['id', 'book_title', 'image']",
+        "detail": "book_api.books.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "book_api.books.urls",
+        "description": "book_api.books.urls",
+        "peekOfCode": "urlpatterns = [\n    path('books/', views.book_list),\n]",
+        "detail": "book_api.books.urls",
+        "documentation": {}
+    },
+    {
+        "label": "book_list",
+        "kind": 2,
+        "importPath": "book_api.books.views",
+        "description": "book_api.books.views",
+        "peekOfCode": "def book_list(request):\n    if request.method == 'GET':\n        books = Book.objects.all()\n        serializer = BookSerializer(books, many=True)\n        return Response(serializer.data)\n    elif request.method == 'POST':\n        serializer = BookSerializer(data=request.data)\n        if serializer.is_valid():\n            serializer.save()\n            return Response(serializer.data, status=status.HTTP_201_CREATED)",
+        "detail": "book_api.books.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "book_api.book_api.asgi",
+        "description": "book_api.book_api.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "book_api.book_api.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "book_api.book_api.settings",
+        "description": "book_api.book_api.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-)xr=su4oa%9@2v97^t($d@#$+$ii^k$b&(i83_jqj*t_3e9y#x'\n# CORS Settings\nCORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_ALL_ORIGINS = True\nCORS_ALLOW_CREDENTIALS = True\nALLOWED_HOSTS = ['*']",
+        "detail": "book_api.book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "book_api.book_api.settings",
+        "description": "book_api.book_api.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-)xr=su4oa%9@2v97^t($d@#$+$ii^k$b&(i83_jqj*t_3e9y#x'\n# CORS Settings\nCORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_ALL_ORIGINS = True\nCORS_ALLOW_CREDENTIALS = True\nALLOWED_HOSTS = ['*']\n# Explicit CORS origins (use this in production instead of ALLOW_ALL)\nCORS_ALLOWED_ORIGINS = [\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:8080\",",
+        "detail": "book_api.book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ORIGIN_ALLOW_ALL",
+        "kind": 5,
+        "importPath": "book_api.book_api.settings",
+        "description": "book_api.book_api.settings",
+        "peekOfCode": "CORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_ALL_ORIGINS = True\nCORS_ALLOW_CREDENTIALS = True\nALLOWED_HOSTS = ['*']\n# Explicit CORS origins (use this in production instead of ALLOW_ALL)\nCORS_ALLOWED_ORIGINS = [\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:8080\",\n]\n# Additional CORS settings",
+        "detail": "book_api.book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOW_ALL_ORIGINS",
+        "kind": 5,
+        "importPath": "book_api.book_api.settings",
+        "description": "book_api.book_api.settings",
+        "peekOfCode": "CORS_ALLOW_ALL_ORIGINS = True\nCORS_ALLOW_CREDENTIALS = True\nALLOWED_HOSTS = ['*']\n# Explicit CORS origins (use this in production instead of ALLOW_ALL)\nCORS_ALLOWED_ORIGINS = [\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:8080\",\n]\n# Additional CORS settings\nCORS_ALLOW_METHODS = [",
+        "detail": "book_api.book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOW_CREDENTIALS",
+        "kind": 5,
+        "importPath": "book_api.book_api.settings",
+        "description": "book_api.book_api.settings",
+        "peekOfCode": "CORS_ALLOW_CREDENTIALS = True\nALLOWED_HOSTS = ['*']\n# Explicit CORS origins (use this in production instead of ALLOW_ALL)\nCORS_ALLOWED_ORIGINS = [\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:8080\",\n]\n# Additional CORS settings\nCORS_ALLOW_METHODS = [\n    'DELETE',",
+        "detail": "book_api.book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "book_api.book_api.settings",
+        "description": "book_api.book_api.settings",
+        "peekOfCode": "ALLOWED_HOSTS = ['*']\n# Explicit CORS origins (use this in production instead of ALLOW_ALL)\nCORS_ALLOWED_ORIGINS = [\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:8080\",\n]\n# Additional CORS settings\nCORS_ALLOW_METHODS = [\n    'DELETE',\n    'GET',",
+        "detail": "book_api.book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOWED_ORIGINS",
+        "kind": 5,
+        "importPath": "book_api.book_api.settings",
+        "description": "book_api.book_api.settings",
+        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:8080\",\n]\n# Additional CORS settings\nCORS_ALLOW_METHODS = [\n    'DELETE',\n    'GET',\n    'OPTIONS',\n    'PATCH',",
+        "detail": "book_api.book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOW_METHODS",
+        "kind": 5,
+        "importPath": "book_api.book_api.settings",
+        "description": "book_api.book_api.settings",
+        "peekOfCode": "CORS_ALLOW_METHODS = [\n    'DELETE',\n    'GET',\n    'OPTIONS',\n    'PATCH',\n    'POST',\n    'PUT',\n]\nCORS_ALLOW_HEADERS = [\n    'accept',",
+        "detail": "book_api.book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOW_HEADERS",
+        "kind": 5,
+        "importPath": "book_api.book_api.settings",
+        "description": "book_api.book_api.settings",
+        "peekOfCode": "CORS_ALLOW_HEADERS = [\n    'accept',\n    'accept-encoding',\n    'authorization',\n    'content-type',\n    'dnt',\n    'origin',\n    'user-agent',\n    'x-csrftoken',\n    'x-requested-with',",
+        "detail": "book_api.book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "book_api.book_api.settings",
+        "description": "book_api.book_api.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'corsheaders',\n    'books',  # Add the books app here",
+        "detail": "book_api.book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "book_api.book_api.settings",
+        "description": "book_api.book_api.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'corsheaders.middleware.CorsMiddleware',  # Place this at the top\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]",
+        "detail": "book_api.book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "book_api.book_api.settings",
+        "description": "book_api.book_api.settings",
+        "peekOfCode": "ROOT_URLCONF = 'book_api.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "book_api.book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "book_api.book_api.settings",
+        "description": "book_api.book_api.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "book_api.book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "book_api.book_api.settings",
+        "description": "book_api.book_api.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'book_api.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "book_api.book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "book_api.book_api.settings",
+        "description": "book_api.book_api.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "book_api.book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "book_api.book_api.settings",
+        "description": "book_api.book_api.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "book_api.book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "book_api.book_api.settings",
+        "description": "book_api.book_api.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "book_api.book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "book_api.book_api.settings",
+        "description": "book_api.book_api.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "book_api.book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "book_api.book_api.settings",
+        "description": "book_api.book_api.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "book_api.book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "book_api.book_api.settings",
+        "description": "book_api.book_api.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "book_api.book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "book_api.book_api.settings",
+        "description": "book_api.book_api.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "book_api.book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "book_api.book_api.settings",
+        "description": "book_api.book_api.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "book_api.book_api.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "book_api.book_api.urls",
+        "description": "book_api.book_api.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/', include('books.urls')),  # Include the books app URLs\n]",
+        "detail": "book_api.book_api.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "book_api.book_api.wsgi",
+        "description": "book_api.book_api.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "book_api.book_api.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "book_api.manage",
+        "description": "book_api.manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'book_api.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "book_api.manage",
+        "documentation": {}
+    }
+]
