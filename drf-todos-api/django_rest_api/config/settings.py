@@ -10,11 +10,31 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
+import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Database
+# https://docs.djangoproject.com/en/5.1/ref/settings/#databases
+
+# MongoDB Database configuration
+# MongoDB Atlas Configuration
+DATABASES = {
+    'default': {
+        'ENGINE': 'djongo',
+        'NAME': 'bookstore',  # This should match the database name in your connection string
+        'ENFORCE_SCHEMA': False,
+        'CLIENT': {
+            'host': os.getenv('MONGODB_URI')
+        }
+    }
+}
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
@@ -40,6 +60,23 @@ INSTALLED_APPS = [
     'rest_framework',
     'books',
 ]
+
+# Add this to help debug any database issues
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'djongo': {
+            'level': 'DEBUG',
+            'handlers': ['console'],
+        },
+    },
+}
 
 # Add REST Framework settings
 REST_FRAMEWORK = {
@@ -81,15 +118,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'config.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
 
 # Password validation
